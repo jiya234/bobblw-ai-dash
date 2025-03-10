@@ -1,0 +1,152 @@
+/* 🔥 Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #111;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* 🏆 Sidebar Hidden State */
+.sidebar.hidden {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* 🔄 Sidebar Styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #111;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out; /* Smooth Transition */
+  overflow: hidden;
+}
+
+/* 🟢 Jab sidebar close ho */
+.sidebar.closed {
+  width: 60px; /* Chhota sidebar */
+}
+
+/* 🔘 Toggle Button (Fixed Position) */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sidebar band hone ke baad button ka position */
+.sidebar.closed + .toggle-btn {
+  left: 10px; /* Left corner pe fix */
+}
+
+/* 🟢 Sidebar Header */
+.sidebar-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🌙 Dark Mode Toggle */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.dark-mode-toggle svg {
+  margin-right: 10px;
+}
+
+/* 🏠 Navigation Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔄 Fix Text Color in Dark Mode */
+.nav-item:visited {
+  color: white;
+}
+
+/* 🏆 Sidebar Toggle Button */
+/* 🔄 Sidebar Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 1000;
+  width: 40px;  /* Chhota kar diya */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-btn:hover {
+  background: #0056b3;
+}
+
+.main-content {
+  margin-left: 250px; /* Sidebar ka space adjust */
+  padding: 20px;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* 📌 Jab Sidebar Close Ho */
+.sidebar.closed + .main-content {
+  margin-left: 60px; /* Chhota Sidebar */
+  width: calc(100% - 60px);
+}
+
+
+.main-content.expanded {
+  margin-left: 0;
+  width: 100%;
+}

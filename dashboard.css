@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ensure full-page scrolling */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8f9fa;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  width: 100vw;  /* Full viewport width */
+  max-width: 100%;
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+
+/* Main Content */
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stats-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-card h3 {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.stats-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll if needed */
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-table th, .content-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.content-table th {
+  background: #f1f1f1;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-blue {
+  background: #007bff;
+}
+
+.btn-blue:hover {
+  background: #0056b3;
+}
+
+.btn-red {
+  background: #dc3545;
+}
+
+.btn-red:hover {
+  background: #a71d2a;
+}

@@ -1,0 +1,75 @@
+/* Users.css */
+.users-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .users-table {
+    width: 100vb;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+ 
+  .users-table td {
+    border: 1px solid #a71212;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .users-table th {
+    background: #f4f4f4;
+  }
+  
+  .banned {
+    background: #ffebeb;
+    color: red;
+  }
+  
+  .warn-btn,
+  .ban-btn,
+  .unban-btn {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .warn-btn {
+    background: rgb(172, 118, 19);
+    color: white;
+  }
+  
+  .ban-btn {
+    background: red;
+    color: white;
+  }
+  
+  .unban-btn {
+    background: green;
+    color: white;
+  }
+  
+  .warn-btn:hover {
+    background: darkorange;
+  }
+  
+  .ban-btn:hover {
+    background: rgb(206, 8, 8);
+  }
+  
+  .unban-btn:hover {
+    background: darkgreen;
+  }
+  

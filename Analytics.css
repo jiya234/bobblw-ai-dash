@@ -1,0 +1,83 @@
+/* Analytics Page Container */
+.analytics-container {
+    display: flex;
+    flex-direction: column; /* Stack items properly */
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100vw - 250px); /* Account for sidebar width */
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Analytics Box */
+.analytics-box {
+    width: 100%;
+    max-width: none; /* Remove width restrictions */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.analytics-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Chart Section */
+.chart-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Individual Chart */
+.chart-container {
+    width: 45%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 10px;
+    height: 100vh;
+    background: #222;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background: #444;
+}
